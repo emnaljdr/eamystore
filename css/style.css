@@ -1,0 +1,234 @@
+/* NAVIGATION BAR */
+header {
+    background: transparent;
+}
+
+.default {
+    background: transparent;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    z-index: 999;
+}
+
+.fixed + .content {
+    padding-top: 50px;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.homeIcon, .push {
+    cursor: pointer;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.pull {
+    margin-left: 2em;
+}
+
+li {
+    padding: 20px;
+}
+
+.store-logo {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}
+
+/* BODY */
+body {
+    margin: 0 auto;
+    font-family: 'Abel', sans-serif;
+    background-color: white;
+}
+
+.zone {
+    color:black;
+    font-size:2em;
+    transition: all 0.3s linear;
+}
+
+/* SLIDESHOW */
+* {box-sizing:border-box}
+
+.container {
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.active{
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* PRODUCTS */
+.myProducts {
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: white;
+    padding: 10px 10px 30px 10px;
+    margin: 20px;
+    text-align: center;
+    font-size: 14pt;
+    border-radius: 0.2em;
+    box-shadow: 1px 1px 2px 3px lightgray;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.itemName {
+    font-weight: bold;
+}
+
+.itemDet {
+    font-size: 0.7em;
+}
+
+.addItem {
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Abel', sans-serif;
+}
+
+/* FOOTER */
+.product-footer {
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.2em;
+    font-weight: lighter;
+    font-family: 'Arial Narrow';
+    color: rgb(212, 212, 212);
+}
+
+/* MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    background-color: white;
+}
+
+.modalItems {
+    border: 1px solid #888;
+    background-color: white;
+    padding: 10px 10px 30px 10px;
+    margin: 20px;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adidas Philippines</title>
+    <link rel = "icon" href = "images/store-logo.png" type = "images/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/6e78360b4a.js"></script>
+</head>
+<body>
+    <header class="default" id="myHeader">
+        <nav class="zone navbar">
+            <ul class="main-nav">
+                <li class="homeIcon"><a href=""><div class="store-logo"><img src="images/store-logo.png"></div></a></li>
+                <li class="pull">MEN</li>
+                <li>WOMEN</li>
+                <li>KIDS</li>
+                <li class="push" id="myCart"><i onclick="document.getElementById('myModal').style.display='block'" class="fas fa-shopping-cart fa-1x" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="container zone myShow">
+            <div class="mySlides fade"><img src="images/slide1.jpg" style="width: 100%;"></div>
+            <div class="mySlides fade"><img src="images/slide2.jpg" style="width: 100%;"></div>
+            <div class="mySlides fade"><img src="images/slide3.jpg" style="width: 100%;"></div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br><br><br>
+        <div class="myProducts zone">SHOES</div><br>
+        <div class="zone flex-wrapper" id="productList"></div>
+        <br><br><br>
+        <footer class="zone myFooter">
+            <div class="listProducts zone">
+                <ul class="product-footer">
+                    <li>Shoes</li>
+                    <li>Clothing</li>
+                    <li>Accessories</li>
+                    <li class="push">2021 | Emmanuel Alejandro</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="flex-container">
+            <span onclick="document.getElementById('myModal').style.display='none'" class="close">&times;</span>
+            <div id="modalContent">
+                <p>Your shopping cart is empty!</p>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
