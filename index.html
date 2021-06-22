@@ -16,8 +16,8 @@
     <header class="default" id="myHeader">
         <nav class="zone navbar">
             <ul class="main-nav">
-                <li class="homeIcon"><a href=""><div class="store-logo"><img src="images/store-logo.png"></div></a></li>
-                <li class="pull">MEN</li>
+                <li class="homeIcon"><a href=""><img id="homeImg" src="images/store-logo.png"></a></li>
+                <li>MEN</li>
                 <li>WOMEN</li>
                 <li>KIDS</li>
                 <li class="push" id="myCart"><i onclick="document.getElementById('myModal').style.display='block'" class="fas fa-shopping-cart fa-1x" aria-hidden="true"></i></li>
@@ -26,9 +26,9 @@
     </header>
     <div class="content">
         <div class="container zone myShow">
-            <div class="mySlides fade"><img src="images/slide1.jpg" style="width: 100%;"></div>
-            <div class="mySlides fade"><img src="images/slide2.jpg" style="width: 100%;"></div>
-            <div class="mySlides fade"><img src="images/slide3.jpg" style="width: 100%;"></div>
+            <div class="mySlides fade"><img class="slideImg" src="images/slide1.jpg"></div>
+            <div class="mySlides fade"><img class="slideImg" src="images/slide2.jpg"></div>
+            <div class="mySlides fade"><img class="slideImg" src="images/slide3.jpg"></div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -48,10 +48,13 @@
         </footer>
     </div>
     <div id="myModal" class="modal">
-        <div class="flex-container">
+        <div class="modal-container">
             <span onclick="document.getElementById('myModal').style.display='none'" class="close">&times;</span>
             <div id="modalContent">
                 <p>Your shopping cart is empty!</p>
+            </div>
+            <div>
+                <button id="myCheckOut">Check out >></button>
             </div>
         </div>
     </div>

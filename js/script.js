@@ -170,3 +170,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// $(window).resize(function(){
+//   If($(window).width()<500){
+//    $('.myMen').removeClass('myMen');
+//   }
+//  });
